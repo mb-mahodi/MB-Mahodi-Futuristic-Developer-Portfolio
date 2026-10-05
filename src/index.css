@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #050816;
+  --color-secondary: #aaa6c3;
+  --color-tertiary: #151030;
+  --color-card-dark: #1d1836;
+  --color-accent-purple: #915eff;
+}
+
+:root {
+  --background: #050816;
+  --secondary-background: #100d25;
+  --purple-accent: #915eff;
+  --text-main: #ffffff;
+  --text-secondary: #aaa6c3;
+}
+
+/* Gradients matching exact reference */
+.violet-gradient {
+  background: #915eff;
+  background: linear-gradient(180deg, #915eff 0%, rgba(145, 94, 255, 0) 100%);
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.black-gradient {
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+html,
+body {
+  background-color: #050816;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: #251c47;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #915eff;
+}
